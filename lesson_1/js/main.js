@@ -6,7 +6,7 @@ const products = [
     {id: 5, },
 ];
 
-const renderProduct = (title = 'Имя товара', price = '---') => {
+const renderProduct = (title = 'Имя товара', price = '----') => {
     return `<div class="product-item">
                 <div class="imgWrapper">
                     <img src="http://via.placeholder.com/300x200" alt="placeholder">
@@ -21,7 +21,7 @@ const renderProduct = (title = 'Имя товара', price = '---') => {
             </div>`;
 };
 
-const renderProducts = (list) => {
+const renderProducts = (list) => { 
     document.querySelector('.products').innerHTML = list.map((item) => renderProduct(item.title, item.price)).join('');
 };
 

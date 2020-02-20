@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambyrgers</title>
+</head>
+<body>
+    <h2>Choose a burger</h2>
+    <form id='form'>
+        <p>
+            <span class="span-title">Choose a size: </span>
+            <input name='burger' data-price='50' data-cal='20' checked id="burger-small" type="radio"><label for="burger-small">Small burger</label>
+            <input name='burger' data-price='100' data-cal='40' id="burger-big" type="radio"><label for="burger-big">Big burger</label>
+        </p>
+        <p>
+            <span class="span-title">Choose a topping: </span>
+            <input name='toppings' data-price='10' data-cal='20' checked id="cheese" type="radio"><label for="cheese">with cheese</label>
+            <input name='toppings' data-price='20' data-cal='5' id="salat" type="radio"><label for="salat">with salat</label>
+            <input name='toppings' data-price='15' data-cal='10' id="potato" type="radio"><label for="potato">with potato</label>
+        </p>
+        <p>
+            <span class="span-title">Choose a sauce: </span>
+           <input name='sauce' data-price='15' data-cal='0' id="seasoning" checked type="checkbox"><label for="seasoning">with seasoning</label>
+           <input name='sauce' data-price='20' data-cal='5' id="mayonnaise" type="checkbox"><label for="mayonnaise">with mayonnaise</label>
+        </p>
+    </form>
+    <div>
+        <p>Total price: <span id='price'></span></p>
+        <p>Count cal: <span id='cal'></span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
